@@ -23,6 +23,13 @@ h1
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
+h2
+{
+    color: rgb(179, 179, 3);
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
 h3
 {
     color: rgb(189, 189, 0);
@@ -35,16 +42,27 @@ p{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-ul
+.initialList
 {
     color: black;
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
 }
-li
+.initialListElement
 {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+ul, ol
+{
+    color: black;
+    font-size: 25px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 a{
     padding-left: 25px;
@@ -74,16 +92,6 @@ a{
     justify-content: center;
     padding: 50px;
 }
-.menuButton
-{
-    width: 200px;
-    height: 25px;
-    background-color: rgb(254, 249, 159);
-    border-color: rgb(254, 249, 159);
-    font-size: 15px;
-    color: black;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 .codeExampleImage
 {
     border-radius: 75px;
@@ -91,6 +99,13 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.topicDiv
+{
+    background-color: rgb(209, 209, 209);
+    padding: 50px;
+    border-radius: 50px;
+    margin-top: 25px;
 }
 .generalTopicDiv
 {

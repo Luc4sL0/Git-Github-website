@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Início | Git e Github</title>
+    <title>Início | Git e GitHub</title>
     <link rel="stylesheet" href="./designs/generalDesign.css">
 </head>
 <body>
     <img class= "gitImage" src="./img/gitHub_logo.png" width="50" height="50">
-    <h1>Como usar o Git e o Github?</h1>
+    <h1>Como usar o Git e o GitHub?</h1>
     <div class="webisteMenuDiv">
         <a href="./index.html"><b>INÍCIO</b></a>
         <a href="./audio.html"><b>ÁUDIO</b></a>
@@ -18,8 +18,8 @@
     <div class="firstDiv">
         <h3>Conteúdos abordados ao longo da matéria: </h3>
         <img class="codeExampleImage" src="./img/image01.avif" width="600" height="400">
-        <ul>
-            <li><b>Definições dos seguintes comandos do Git:</b></li>
+        <ul class="initialList">
+            <li class="initialListElement"><b>Descrições <small>(definições)</small> dos seguintes comandos do Git:</b></li>
             <table>
                 <tr>
                     <td>init</td>
@@ -55,9 +55,14 @@
                     <td>rebase</td>
                     <td>blame</td>
                     <td>tag</td>
+                    <td>log</td>
                   </tr>
             </table>
-            <li><b>Tutorial prático de utilização do Git e Github</b></li>
+            <li class="initialListElement"><b>Tutorial prático de utilização do Git</b></li>
+            <li class="initialListElement"><b>Tutorial prático de utilização do GitHub</b></li>
+    </div>
+    <div class="topicDiv">
+        <h2>Descrições dos comandos do Git</h2>
     </div>
     <div class="generalTopicDiv">
         <h1>init</h1>
@@ -80,15 +85,15 @@
     </div>
     <div class="generalTopicDiv">
         <h1>checkout</h1>
-        <p>A <b>operação</b> do git que <b>altera</b> o <b>estado</b> da <b>área de trabalho</b> para corresponder ao estado de um commit 
+        <p>A <b>operação</b> do git que <b>altera</b> o <b>estado</b> da <b>área de trabalho</b> para corresponder ao <b>estado de um commit</b> 
             é chamada de <i><mark>“git checkout”</mark></i>. Isso pode incluir a atualização dos arquivos no diretório de trabalho para 
             corresponder a um commit ou a criação de um novo branch e a mudança para ele.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>status</h1>
-        <p>o termo "status" refere-se ao <b>comando</b> <i><mark>"git status"</mark></i>, que é <b>utilizado</b> para exibir o 
+        <p>O termo "status" refere-se ao <b>comando</b> <i><mark>"git status"</mark></i>, que é <b>utilizado</b> para exibir o 
             <b>estado atual</b> do repositório de trabalho. Este comando fornece <b>informações</b> sobre as <b>alterações</b> 
-            que foram feitas, mas ainda não foram comprometidas, além de mostrar quais arquivos estão no índice (staging area) 
+            que foram feitas, mas ainda <b>não foram comprometidas</b>, além de mostrar quais arquivos estão no índice (staging area) 
             prontos para serem confirmados (committed) e quais não estão sendo rastreados pelo Git.</p>
     </div>
     <div class="generalTopicDiv">
@@ -100,59 +105,172 @@
     <div class="generalTopicDiv">
         <h1>add</h1>
         <p>O <b>comando</b> <i><mark>"git add"</mark></i> é usado para <b>adicionar mudanças</b> no <b>conteúdo</b> do <b>diretório</b> 
-            de trabalho ao índice (também conhecido como "staging area"). Este é um passo intermediário antes de confirmar as mudanças 
+            de trabalho ao <b>índice</b> (também conhecido como "staging area"). Este é um passo intermediário antes de confirmar as mudanças 
             com o comando <i><mark>"git commit"</mark></i>.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>commit</h1>
-        <p>Um commit no Git é uma <b>ação</b> que <b>salva mudanças</b> no <b>repositório</b> de código. O comando a ser utilizado é 
+        <p>Um commit no Git é uma <b>ação</b> que <b>salva mudanças</b> no <b>repositório</b> de código. O <b>comando</b> a ser utilizado é 
             <i><mark>'git commit -m "Descrição das mudanças"'</mark></i>.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>push</h1>
-        <p>O <b>comando</b> <i><mark>'git push'</mark></i> no Git é usado para <b>enviar</b> as <b>alterações locais</b> do seu repositório 
+        <p>O <b>comando</b> <i><mark>"git push"</mark></i> no Git é usado para <b>enviar</b> as <b>alterações locais</b> do seu repositório 
             para um <b>repositório remoto</b>. Ele sincroniza o estado atual do seu ramo local com o ramo correspondente no repositório remoto.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>pull</h1>
-        <p>O <b>comando</b> <i><mark>'git pull'</mark></i> no Git é usado para <b>atualizar</b> o seu <b>repositório local</b> com as <b>alterações</b> 
+        <p>O <b>comando</b> <i><mark>"git pull"</mark></i> no Git é usado para <b>atualizar</b> o seu <b>repositório local</b> com as <b>alterações</b> 
             do <b>repositório remoto</b>.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>revert</h1>
-        <p>O <b>comando</b> <i><mark>'git revert'</mark></i> no Git é usado para <b>desfazer</b> uma ou mais <b>confirmações</b> (commits) <b>anteriores</b> 
+        <p>O <b>comando</b> <i><mark>"git revert"</mark></i> no Git é usado para <b>desfazer</b> uma ou mais <b>confirmações</b> (commits) <b>anteriores</b> 
             em um <b>repositório</b>, <b>criando</b> novos <b>commits</b> que <b>desfazem</b> as <b>alterações</b> introduzidas pelos commits originais.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>merge</h1>
-        <p>O <b>comando</b> <i><mark>'git merge'</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
+        <p>O <b>comando</b> <i><mark>"git merge"</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
             Essencialmente, ele une o histórico de alterações de uma branch em outra. </p>
     </div>
     <div class="generalTopicDiv">
         <h1>stash</h1>
-        <p>O <b>comando</b> <i><mark>'git merge'</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
-            Essencialmente, ele une o histórico de alterações de uma branch em outra. </p>
+        <p>O <b>comando</b> <i><mark>"git stash"</mark></i> no Git é utilizado para <b>salvar temporariamente</b> as <b>mudanças</b> no diretório de 
+            trabalho que ainda <b>não</b> foram <b>confirmadas</b> (commitadas) para que você possa trabalhar em outra coisa sem perder o seu progresso 
+            atual.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>rm</h1>
-        <p>O <b>comando</b> <i><mark>'git merge'</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
-            Essencialmente, ele une o histórico de alterações de uma branch em outra. </p>
+        <p>O <b>comando</b> <i><mark>"rm"</mark></i> no Git é utilizado para <b>remover arquivos</b> do índice (staging area) e/ou do diretório de trabalho.</p>
     </div>
     <div class="generalTopicDiv">
         <h1>config</h1>
-        <p>O <b>comando</b> <i><mark>'git merge'</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
-            Essencialmente, ele une o histórico de alterações de uma branch em outra. </p>
+        <p>O <b>comando</b> <i><mark>"git config"</mark></i> é utilizado para <b>configurar variáveis de ambiente</b> que controlam a <b>aparência</b> 
+            e o <b>funcionamento</b> do Git. Essas configurações podem ser feitas em três níveis diferentes:</p>
+        <ul>
+            <li><b>Local(--local)</b>: Afeta apenas o repositório atual. </li>
+            <li><b>Global(--global)</b>: Afeta todos os repositórios do usuário.</li>
+            <li><b>Sistema(--system)</b>: Afeta todos os usuários e repositórios no sistema.</li>
+        </ul>
     </div>
     <div class="generalTopicDiv">
         <h1>reset</h1>
-        <p>O <b>comando</b> <i><mark>'git merge'</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
-            Essencialmente, ele une o histórico de alterações de uma branch em outra. </p>
+        <p>O <b>comando</b> <i><mark>"git reset"</mark></i> no Git é usado para <b>redefinir o estado</b> do repositório, permitindo <b>desfazer commits</b> e 
+            <b>alterar o histórico</b>. Há três modos principais de operação:</p>
+        <ul>
+            <li><b>--soft</b>: Move a cabeça (HEAD) para um novo commit, mas mantém as mudanças do commit original no índice (staging area) e na árvore de 
+                trabalho (working directory). Ideal para desfazer um commit mas manter as mudanças para serem recomitadas.</li>
+            <li><b>--mixed</b>: Move a cabeça para um novo commit e reseta o índice, mas mantém as mudanças na árvore de trabalho. É útil para desfazer commits 
+                e preparar as mudanças novamente para o estágio.</li>
+            <li><b>--hard</b>: Move a cabeça para um novo commit e reseta tanto o índice quanto a árvore de trabalho, descartando todas as mudanças locais. 
+                Usado para desfazer commits e eliminar completamente as alterações feitas após o commit especificado.</li>
+        </ul>
     </div>
     <div class="generalTopicDiv">
         <h1>remote</h1>
-        <p>O <b>comando</b> <i><mark>'git merge'</mark></i> no Git é usado para <b>combinar alterações</b> de <b>diferentes branches</b> do seu repositório. 
-            Essencialmente, ele une o histórico de alterações de uma branch em outra. </p>
+        <p>o <b>comando</b> <i><mark>"git remote"</mark></i> é utilizado para <b>gerenciar</b> repositórios <b>remotos</b>. Esses repositórios remotos são 
+            versões do seu projeto que estão hospedadas na internet ou em uma rede. Eles são úteis para colaborar com outras pessoas.</p>
     </div>
-
+    <div class="generalTopicDiv">
+        <h1>fetch</h1>
+        <p>O <b>comando</b> <i><mark>"git fetch"</mark></i> é utilizado para <b>baixar atualizações</b> de <b>repositórios remotos</b> para o <b>repositório 
+            local</b>, <b>sem fazer</b> a <b>fusão</b> dessas atualizações no <b>trabalho atual</b>. Ele recupera os dados mais recentes, como novos commits, 
+            branches e tags do repositório remoto, mas não altera o estado atual da árvore de trabalho ou do índice local. Isso permite que você veja o que 
+            mudou no repositório remoto antes de decidir integrar essas alterações ao seu branch de trabalho.</p>
+    </div>
+    <div class="generalTopicDiv">
+        <h1>show</h1>
+        <p>O <b>comando</b> <i><mark>"git show"</mark></i> no Git é utilizado para <b>exibir</b> várias <b>informações</b> sobre <b>objetos Git</b>, como 
+            commits, blobs (conteúdo de arquivos), tags e trees (estruturas de diretórios). Sua forma mais comum é usada para mostrar detalhes sobre um 
+            commit específico.</p>
+    </div>
+    <div class="generalTopicDiv">
+        <h1>help</h1>
+        <p>O <b>comando</b> <i><mark>"git help"</mark></i> é utilizado para <b>acessar</b> a <b>documentação</b> e obter <b>informações detalhadas</b> sobre 
+            <b>comandos específicos</b> do Git. Quando você executa git help, ele fornece uma visão geral dos comandos disponíveis e permite que você busque 
+            ajuda sobre qualquer comando específico do Git.</p>
+    </div>
+    <div class="generalTopicDiv">
+        <h1>rebase</h1>
+        <p>O <b>comando</b> <i><mark>"git rebase"</mark></i> no Git é usado para <b>reaplicar commits</b> de uma <b>branch</b> sobre <b>outra base</b>. Ele 
+            essencialmente permite você reorganizar a história dos commits, integrando as alterações de uma branch na outra de maneira linear.</p>
+    </div>
+    <div class="generalTopicDiv">
+        <h1>blame</h1>
+        <p>O <b>comando</b> <i><mark>"git blame"</mark></i> é usado para <b>mostrar informações</b> sobre as <b>alterações</b> em um <b>arquivo linha por 
+            linha</b>. Cada linha do arquivo é anotada com detalhes sobre o commit mais recente que modificou essa linha, incluindo o autor, a data e o 
+            hash do commit.</p>
+    </div>
+    <div class="generalTopicDiv">
+        <h1>tag</h1>
+        <p>O <b>comando</b> <i><mark>"git tag"</mark></i> é usado para <b>adicionar, listar ou excluir tags</b> em um repositório Git. Tags são usadas 
+            para marcar pontos específicos na história do repositório, como versões de lançamento ou pontos de referência importantes. </p>
+    </div>
+    <div class="generalTopicDiv">
+        <h1>log</h1>
+        <p>O <b>comando</b> <i><mark>"git log"</mark></i> é utilizado para <b>visualizar</b> o <b>histórico</b> de <b>commits</b> em um repositório Git. 
+            Ele exibe uma lista dos commits mais recentes, mostrando detalhes como o hash do commit, autor, data e hora do commit, e a mensagem de commit 
+            associada.</p>
+    </div>
+    <div class="topicDiv">
+        <h2>Tutorial prático de utilização do Git</h2>
+    </div>
+    <div class="generalTopicDiv">
+        <ol>
+            <li><b>Instalação</b>:
+                <ul>
+                    <li>Faça o download do Git em git-scm.com.</li>
+                    <li>Siga as instruções de instalação para o seu sistema operacional.</li>
+                </ul>
+            </li>
+            <li><b>Configuração inicial</b>:
+                <ul>
+                    <li>Configure seu nome de usuário e endereço de e-mail usando:
+                        <ul>
+                            <li><i><mark>'git config --global user.name "Seu Nome"'</mark></i></li>
+                            <li><i><mark>'git config --global user.email "seuemail@example.com"'</mark></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><b>Iniciar um repositório</b>:
+                <ul>
+                    <li>Crie um novo diretório para o seu projeto.</li>
+                    <li>Dentro do diretório, inicie um repositório Git com: <i><mark>"git init"</mark></i></li>
+                </ul>
+            </li>
+            <li><b>Adicionar e confirmar alterações</b>:
+                <ul>
+                    <li>Adicione arquivos ao controle de versão com: <i><mark>"git add nome_do_arquivo"</mark></i></li>
+                    <li>Confirme suas alterações usando: <i><mark>'git commit -m "Sua mensagem de commit aqui"'</mark></i></li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <div class="topicDiv">
+        <h2>Tutorial prático de utilização do GitHub</h2>
+    </div>
+    <div class="generalTopicDiv">
+        <ol>
+            <li><b>Criar um repositório</b>:
+                <ul>
+                    <li>Faça login no GitHub e clique em "New Repository".</li>
+                    <li>Siga as instruções para nomear e configurar seu repositório.</li>
+                </ul>
+            </li>
+            <li><b>Conectar seu repositório local ao GitHub</b>:
+                <ul>
+                    <li>Adicione o repositório remoto do GitHub com: <i><mark>"git remote add origin url_do_repositorio"</mark></i></li>
+                    <li>Envie suas alterações para o GitHub com: <i><mark>"git push -u origin main"</mark></i></li>
+                </ul>
+            </li>
+            <li><b>Clonar um repositório existente</b>:
+                <ul>
+                    <li>No GitHub, encontre o repositório que deseja clonar.</li>
+                    <li>Copie o URL do repositório.</li>
+                    <li>No terminal, use: <i><mark>"git clone url_do_repositorio"</mark></i></li>
+                </ul>
+        </ol>
+    </div>
 </body>
 </html>
